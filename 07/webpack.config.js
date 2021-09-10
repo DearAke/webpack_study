@@ -25,6 +25,7 @@ module.exports = {
   // 特点：只会在内存中编译打包，不会有任何输出!!!!
   // 启动devServer指令为：npx webpack-dev-server
   // 对于html文件的改变，不会自动刷新页面。
+  // 修改index.js 以及 index.js 引入的文件 可以触发自动刷新
   devServer: {
     static: {
       directory: resolve(__dirname, "build")
