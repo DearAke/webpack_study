@@ -19,4 +19,4 @@
 
 2. webpack5 中处理 html 里 img 的 src 需要 html-withimg-loader
 
-3. webpack5 打包 ttf|woff|woff2 时（可能关于其他的字体文件也不需要处理，未实践），不需要写配置即可实现，可能是自己没找到打包的准确方法。
+3. webpack5 打包 ttf|woff|woff2 时（可能关于其他的字体文件也不需要处理，未实践），不需要写配置即可实现，可能是自己没找到打包的准确方法或是与其匹配的 loader。
