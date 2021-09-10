@@ -21,5 +21,8 @@
     "prettier-eslint": "^13.0.0",
     "style-loader": "^3.2.1",
     "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.2.0"
   }
 }
