@@ -37,6 +37,20 @@ module.exports = {
         //webpack5 中处理html里的img 需要 html-withimg-loader
         test: /\.html$/,
         loader: "html-withimg-loader"
+      },
+      {
+        exclude: /\.(html|js|jpg|png|gif|less|css)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[hash:6].[ext]",
+              outputPath: "media",
+              esModule: false // webpack5默认开启esModule 手动关闭
+            }
+          }
+        ],
+        type: "javascript/auto" // 阻止webpack5中asset
       }
     ]
   },
@@ -55,7 +69,7 @@ module.exports = {
       directory: resolve(__dirname, "build")
     },
     compress: true,
-    port: 1314,
+    port: 2233,
     open: true
   }
 };
